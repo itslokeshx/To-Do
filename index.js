@@ -6,6 +6,7 @@ function createtask(){
    
     const tickbox = document.createElement("input")
     tickbox.type="checkbox"
+    tickbox.className="tickbox"
     task.appendChild(tickbox)
 
 
