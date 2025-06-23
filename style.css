@@ -152,4 +152,8 @@ li:last-child {
     .tickbox{
          margin-top: 16px;
     }
+    body{
+        display:flex;
+        justify-content: flex-start;
+    }
 }
