@@ -22,5 +22,33 @@ function createtask(){
 
     tasklist.appendChild(task);
     
+     taskno = tasklist.children.length
+   document.getElementById("taskleft").innerText= taskno;
+
+   tickbox.addEventListener("change",()=>{
+    if(tickbox.checked)
+    {
+        text.className="completed"
+        taskno=taskno-1;
+        document.getElementById("taskleft").innerText= taskno;
+        
+    }
+    else{
+        text.className="task-text"
+        taskno=taskno+1;
+        document.getElementById("taskleft").innerText= taskno;
+    }
+   })
+  Delete.addEventListener("click",removetask)
+
+  function removetask() {
+    
+    task.remove();
+      taskno=taskno-1;
+     document.getElementById("taskleft").innerText= taskno;
+
+   }
    
+  
 }
+
